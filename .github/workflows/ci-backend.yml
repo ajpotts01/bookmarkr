@@ -19,13 +19,10 @@ jobs:
         uses: astral-sh/setup-uv@v5
         with:
           version: "0.7.5"
-      - name: See working dir
-        run: |
-          pwd && ls
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version-file: ".python-version"
+          python-version-file: "pyproject.toml"
       - name: Setup project
         run: uv sync --locked --all-extras --dev
       - name: Run tests and save reports
