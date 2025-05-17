@@ -1,2 +1,2 @@
 # bookmarkr
-Bookmark manager app used to practice serverless + Blazor
+Bookmark manager app used to practice Django, DevSecOps, and serverless deployment
