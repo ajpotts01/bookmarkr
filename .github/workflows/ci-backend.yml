@@ -19,6 +19,7 @@ jobs:
         uses: astral-sh/setup-uv@v5
         with:
           version: "0.7.5"
+      # https://docs.astral.sh/uv/guides/integration/github/#setting-up-python
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -38,4 +39,4 @@ jobs:
         id: artifact-upload-step
         with:
           name: test-results
-          path: junit/test-results.xml
+          path: backend/junit/test-results.xml
