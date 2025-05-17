@@ -6,7 +6,9 @@ from django.db import models
 
 
 class Bookmark(models.Model):
-    uuid: models.UUIDField = models.UUIDField(primary_key=True, default=uuid.uuid4)
+    id: models.UUIDField = models.UUIDField(
+        primary_key=True, default=uuid.uuid4
+    )
     title: models.CharField = models.CharField(max_length=150)
     url: models.URLField = models.URLField()
     created_at: models.DateTimeField = models.DateTimeField(auto_now_add=True)
