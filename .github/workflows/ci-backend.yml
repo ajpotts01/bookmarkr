@@ -20,7 +20,8 @@ jobs:
         with:
           version: "0.7.5"
       - name: See working dir
-        run: pwd
+        run: |
+          pwd && ls
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
